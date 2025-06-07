@@ -1,0 +1,203 @@
+\documentclass[portuguese,11pt,a4paper,oneside,onecolumn,notitlepage]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{babel}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{float}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{multicol}
+\usepackage{hyperref}
+\geometry{a4paper, margin=2.5cm}
+\titleformat{\section}{\normalfont\Large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalfont\large\bfseries}{\thesubsection}{1em}{}
+
+\title{\textbf{Unidades de Medida e o Sistema Internacional (SI)}}
+\author{mr.spoopy}
+\date{}
+
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Física Básica}
+\lhead{Unidades de Medida}
+\rfoot{\thepage}
+
+\begin{document}
+	\maketitle
+	
+	\section{Por que Padronizar as Unidades de Medida?}
+	
+	Desde os tempos antigos, diferentes civilizações utilizaram unidades próprias para medir comprimento, massa e tempo. Por exemplo, os egípcios usavam o "côvado", os romanos o "pé", e os franceses utilizavam múltiplas unidades locais. Isso causava sérios problemas em trocas comerciais, engenharia, navegação e ciência.
+	
+	Com o avanço da ciência e da globalização, tornou-se imprescindível ter um \textbf{sistema unificado e universal}. As vantagens da padronização incluem:
+	
+	\begin{itemize}
+		\item \textbf{Precisão científica}: permite que experimentos possam ser reproduzidos em qualquer lugar do mundo.
+		\item \textbf{Facilidade de comunicação}: evita mal-entendidos entre cientistas, engenheiros, profissionais da saúde e técnicos.
+		\item \textbf{Eficiência comercial}: facilita o comércio internacional, pois todos utilizam as mesmas referências.
+		\item \textbf{Segurança}: erros de unidade podem causar acidentes (como o famoso caso da sonda Mars Climate Orbiter, perdida por confusão entre milhas e quilômetros).
+	\end{itemize}
+	
+	\section{O que é o Sistema Internacional (SI)?}
+	
+	O \textbf{Sistema Internacional de Unidades (SI)} foi criado em 1960, durante a 11ª Conferência Geral de Pesos e Medidas (CGPM). Ele é o sucessor do sistema métrico decimal e tem como base sete unidades fundamentais.
+	
+	\subsection*{Características do SI}
+	\begin{itemize}
+		\item É \textbf{coerente}: as unidades derivadas resultam logicamente da combinação das fundamentais.
+		\item É \textbf{decimal}: as unidades e seus múltiplos/submúltiplos usam potências de 10.
+		\item É \textbf{universal}: adotado oficialmente por quase todos os países.
+		\item É \textbf{dinâmico}: atualiza-se conforme os avanços da ciência (por exemplo, a redefinição do quilograma em 2019).
+	\end{itemize}
+	
+	\subsection*{Unidades Fundamentais do SI}
+	
+	\begin{table}[H]
+		\centering
+		\begin{tabular}{>{\bfseries}l l l l}
+			\toprule
+			Grandeza Física & Unidade SI & Símbolo & Definição Atual \\
+			\midrule
+			Comprimento & metro & m & Distância percorrida pela luz em 1/299\,792\,458 s \\
+			Massa & quilograma & kg & Definido pela constante de Planck \\
+			Tempo & segundo & s & 9\,192\,631\,770 períodos da radiação do césio-133 \\
+			Corrente elétrica & ampère & A & Definido pela carga elementar $e$ \\
+			Temperatura termodinâmica & kelvin & K & Definido pela constante de Boltzmann \\
+			Quantidade de substância & mol & mol & 6{,}02214076 × $10^{23}$ entidades elementares \\
+			Intensidade luminosa & candela & cd & Intensidade de radiação em uma direção específica \\
+			\bottomrule
+		\end{tabular}
+		\caption{Grandezas Fundamentais do Sistema Internacional}
+	\end{table}
+	
+	\section{Prefixos do SI}
+	
+	Os prefixos são utilizados para representar múltiplos e submúltiplos das unidades, tornando mais prático o uso de números muito grandes ou muito pequenos.
+	
+	\subsection*{Principais Prefixos (Mais Usados)}
+	
+	\begin{table}[H]
+		\centering
+		\begin{tabular}{>{\bfseries}l l l l}
+			\toprule
+			Nome & Símbolo & Fator & Exemplo \\
+			\midrule
+			Quilo & k & $10^3$ & 1 km = 1\,000 m \\
+			Hecto & h & $10^2$ & 1 hL = 100 L \\
+			Deca & da & $10^1$ & 1 dam = 10 m \\
+			(de unidade) & – & $10^0$ & 1 m = 1 m \\
+			Deci & d & $10^{-1}$ & 1 dm = 0{,}1 m \\
+			Centi & c & $10^{-2}$ & 1 cm = 0{,}01 m \\
+			Mili & m & $10^{-3}$ & 1 mm = 0{,}001 m \\
+			Micro & µ & $10^{-6}$ & 1 µm = $10^{-6}$ m \\
+			Nano & n & $10^{-9}$ & 1 nm = $10^{-9}$ m \\
+			Pico & p & $10^{-12}$ & 1 pF = $10^{-12}$ F \\
+			\bottomrule
+		\end{tabular}
+		\caption{Prefixos Decimais do SI}
+	\end{table}
+	
+	\subsection*{Prefixos Menos Usados (para ciência avançada)}
+	
+	\begin{itemize}
+		\item \textbf{Giga (G)} = $10^9$ — usado em informática (1 GB = $10^9$ bytes)
+		\item \textbf{Tera (T)} = $10^{12}$ — 1 terawatt = $10^{12}$ watts
+		\item \textbf{Femto (f)} = $10^{-15}$ — usado em escalas atômicas
+		\item \textbf{Atto (a)} = $10^{-18}$ — tempo de decaimento de partículas subatômicas
+	\end{itemize}
+	
+	\section{Unidades Derivadas no SI}
+	
+	\subsection*{Exemplos Comuns de Unidades Derivadas}
+	
+	\begin{table}[H]
+		\centering
+		\begin{tabular}{>{\bfseries}l l l}
+			\toprule
+			Grandeza Derivada & Unidade & Expressão \\
+			\midrule
+			Velocidade & metro por segundo & m/s \\
+			Aceleração & metro por segundo ao quadrado & m/s² \\
+			Força & newton & N = kg·m/s² \\
+			Trabalho/Energia & joule & J = N·m = kg·m²/s² \\
+			Potência & watt & W = J/s = kg·m²/s³ \\
+			Pressão & pascal & Pa = N/m² = kg/m·s² \\
+			Carga elétrica & coulomb & C = A·s \\
+			Tensão elétrica & volt & V = W/A = kg·m²/s³·A \\
+			\bottomrule
+		\end{tabular}
+		\caption{Unidades Derivadas do SI}
+	\end{table}
+	
+	\subsection*{Observação}
+	As unidades derivadas também podem possuir \textbf{nomes próprios}, como joule, newton, watt, em homenagem a cientistas que contribuíram para essas áreas.
+	
+	\section{Aplicações Práticas das Unidades SI}
+	
+	\subsection*{Física}
+	\begin{itemize}
+		\item Medição da velocidade da luz: $3{,}0 \times 10^8$ m/s
+		\item Força de atrito entre duas superfícies: medida em newtons (N)
+	\end{itemize}
+	
+	\subsection*{Química}
+	\begin{itemize}
+		\item Quantidade de moléculas em 1 mol: $6{,}022 \times 10^{23}$
+		\item Volume molar de um gás ideal: 22{,}4 L/mol (em CNTP)
+	\end{itemize}
+	
+	\subsection*{Engenharia}
+	\begin{itemize}
+		\item Potência de motores: expressa em kilowatts (kW)
+		\item Pressão em sistemas hidráulicos: medida em pascal (Pa) ou MPa
+	\end{itemize}
+	
+	\subsection*{Informática}
+	\begin{itemize}
+		\item Armazenamento digital: megabytes (MB), gigabytes (GB), terabytes (TB)
+		\item Velocidade de transmissão de dados: megabits por segundo (Mbps)
+	\end{itemize}
+	
+	\section{Conversão de Unidades}
+	
+	\subsection*{Regras Gerais}
+	\begin{itemize}
+		\item Multiplique ou divida por potências de 10 ao converter entre prefixos.
+		\item Mantenha a consistência de unidades ao fazer cálculos físicos.
+	\end{itemize}
+	
+	\subsection*{Exemplo de Conversão}
+	
+	Converter 5 km para metros:
+	
+	\[
+	5\, \text{km} = 5 \times 10^3\, \text{m} = 5\,000\, \text{m}
+	\]
+	
+	Converter 250 mL para litros:
+	
+	\[
+	250\, \text{mL} = 250 \times 10^{-3}\, \text{L} = 0{,}25\, \text{L}
+	\]
+	
+	\section{Curiosidades e Evolução Histórica}
+	
+	\begin{itemize}
+		\item O metro já foi definido como a décima milionésima parte da distância entre o equador e o polo norte.
+		\item O quilograma, antes de 2019, era definido por um cilindro de platina-irídio guardado na França.
+		\item Atualmente, todas as unidades SI são definidas com base em \textbf{constantes fundamentais da natureza}, como a velocidade da luz ($c$) e a constante de Planck ($h$).
+	\end{itemize}
+	
+	\section{Conclusão}
+	
+	As unidades de medida e o Sistema Internacional são ferramentas indispensáveis para a ciência moderna. Elas proporcionam precisão, clareza e confiabilidade em todas as áreas do conhecimento humano. A compreensão e aplicação correta dessas unidades são habilidades essenciais para estudantes, pesquisadores e profissionais de qualquer área técnica ou científica.
+	
+	\vspace{0.5cm}
+	\textit{“Medir é saber.” — Lord Kelvin}
+	
+\end{document}

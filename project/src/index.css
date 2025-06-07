@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --black: #020202;
+  --dark-gray: #1A1A1A;
+  --yellow: #FFD700;
+  --glow: 0 0 10px #FFD700, 0 0 20px rgba(255, 215, 0, 0.5);
+}
+
+body {
+  background-color: var(--black);
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+}
+
+@layer base {
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Quicksand', sans-serif;
+  }
+}
+
+@layer components {
+  .neon-glow {
+    text-shadow: 0 0 5px #FFD700, 0 0 10px rgba(255, 215, 0, 0.5);
+  }
+  
+  .neon-border {
+    box-shadow: 0 0 5px #FFD700, 0 0 10px rgba(255, 215, 0, 0.3);
+  }
+  
+  .neon-button {
+    @apply bg-black border border-yellow-400 text-yellow-400 px-6 py-2 rounded transition-all duration-300;
+  }
+  
+  .neon-button:hover {
+    @apply bg-yellow-400/10 border-yellow-300 text-yellow-300;
+    box-shadow: var(--glow);
+  }
+  
+  .card-glow-effect {
+    @apply transition-all duration-300;
+  }
+  
+  .card-glow-effect:hover {
+    box-shadow: var(--glow);
+    transform: translateY(-5px);
+  }
+
+  .circuit-bg {
+    background-image: radial-gradient(circle at 50% 50%, rgba(255, 215, 0, 0.1) 0%, transparent 25%),
+                      linear-gradient(to right, transparent 95%, rgba(255, 215, 0, 0.1) 100%),
+                      linear-gradient(to bottom, transparent 95%, rgba(255, 215, 0, 0.1) 100%);
+    background-size: 50px 50px, 20px 20px, 20px 20px;
+    background-position: 0 0, 0 0, 0 0;
+  }
+}
+
+.neural-network-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
